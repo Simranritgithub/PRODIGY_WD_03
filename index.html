@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+
+    <!-- Game mode selection -->
+    <div id="mode-selection">
+        <button onclick="startGame('two-player')">Two Player</button>
+        <button onclick="startGame('ai')">Play vs AI</button>
+    </div>
+
+    <!-- Game board -->
+    <div id="game-board" class="board hidden">
+        <div onclick="makeMove(this, 0)" class="cell"></div>
+        <div onclick="makeMove(this, 1)" class="cell"></div>
+        <div onclick="makeMove(this, 2)" class="cell"></div>
+        <div onclick="makeMove(this, 3)" class="cell"></div>
+        <div onclick="makeMove(this, 4)" class="cell"></div>
+        <div onclick="makeMove(this, 5)" class="cell"></div>
+        <div onclick="makeMove(this, 6)" class="cell"></div>
+        <div onclick="makeMove(this, 7)" class="cell"></div>
+        <div onclick="makeMove(this, 8)" class="cell"></div>
+    </div>
+
+    <h2 id="statusArea"></h2>
+    <button onclick="resetGame()" id="reset-btn" class="hidden">Reset Game</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
